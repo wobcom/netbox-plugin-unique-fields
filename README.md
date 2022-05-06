@@ -5,13 +5,10 @@
 This plugin adds the functionality of unqiue enforced configurable fields in Netbox. 
 Right now, it only supports a specific field for one specific use case but may be extended later on as needed.
 
-## ToDos
-
-+ Publication on PyPi for easier installation
-
 ## Installation
 
-+ Install `netbox-plugin-unique-fields`
++ Install `netbox-plugin-unique-fields` from VCS
+  + `pip install -e git+https://github.com/wobcom/netbox-plugin-unique-fields@x.x.x#egg=netbox-plugin-unique-fields`
 + Add `netbox-plugin-unique-fields` to PLUGINS
 
 ## Usage
