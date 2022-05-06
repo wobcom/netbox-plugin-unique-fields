@@ -1,0 +1,31 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>SID</strong>
+    </div>
+    {% if object.sid %}
+        <table class="table table-hover panel-body">
+            <tr>
+                <td>SID</td>
+                <td>{{ object.sid }}</td>
+            </tr>
+        </table>
+    {% else %}
+        <div class="panel-body text-muted">
+            None
+        </div>
+    {% endif %}
+    {% if perms.ipam.add_sid %}
+        <div class="panel-footer text-right noprint">
+            {% if object.sid %}
+                <a href="{% url 'plugins:netbox_plugin_unique_fields:sid_delete' pk=object.sid.pk %}?return_url={{ object.get_absolute_url }}" class="btn btn-xs btn-danger">
+                    <span class="mdi mdi-plus-thick" aria-hidden="true"></span> Delete SID
+                </a>
+            {% else %}
+                <a href="{% url 'plugins:netbox_plugin_unique_fields:sid_add' %}?device={{ object.pk }}&return_url={{ object.get_absolute_url }}" class="btn btn-xs btn-primary">
+                    <span class="mdi mdi-plus-thick" aria-hidden="true"></span> Add SID
+                </a>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+                            
