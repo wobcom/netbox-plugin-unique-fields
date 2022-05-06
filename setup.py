@@ -6,7 +6,7 @@ setup(
     description='Plugin for unique "custom" fields in Netbox v2.11.x',
     url='',
     author='Johann Wagner <johann.wagner@wobcom.de>',
-    license='',
+    license='GPL-3.0',
     packages=find_packages(),
     include_package_data=True,
 )
