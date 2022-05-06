@@ -5,7 +5,7 @@ class PluginUniqueFields(PluginConfig):
     name = "netbox_plugin_unique_fields"
     verbose_name = "Unique Fields Plugin"
     description = ""
-    version = "0.0.0"
+    version = "0.1.0"
     author = "Johann Wagner"
     author_mail = "johann.wagner@wobcom.de"
     base_url = "unique_fields"
